@@ -21,7 +21,7 @@ First you'll need to install the [Composer package](https://packagist.org/packag
 Simply add the following to the `"require"` section of your `composer.json` file, and `composer update`.
 
 ```json
-"juy/CharacterSolver": "dev-master",
+"juy/character-solver": "dev-master",
 ```
 
 Next, you'll need to add the `ServiceProvider` for this command to the `providers` array within your `config/app.php` file.
