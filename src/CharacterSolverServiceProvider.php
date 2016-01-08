@@ -3,15 +3,18 @@
 namespace Juy\CharacterSolver;
 
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Contracts\Http\Kernel;
 
 class CharacterSolverServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap the application services.
      *
+     * @param \Illuminate\Contracts\Http\Kernel $kernel
+
      * @return void
      */
-    public function boot(\Illuminate\Contracts\Http\Kernel $kernel) {
+    public function boot(Kernel $kernel) {
         // Global middleware
         // Add a new middleware to end of the stack if it does not already exist.
         // https://github.com/laravel/framework/blob/5.1/src/Illuminate/Foundation/Http/Kernel.php#L205
