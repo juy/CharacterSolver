@@ -33,14 +33,6 @@ class CharacterSolver {
         $response = $next($request);
         $response->setContent(strtr($response->getContent(), $translate));
         
-        /*
-        $response->setContent(str_replace(
-            ['&ccedil;', '&Ccedil;', '&ouml;', '&Ouml;', '&uuml;', '&Uuml;'],
-            ['ç',        'Ç',        'ö',      'Ö',      'ü',      'Ü'],
-            $response->getContent()
-        ));
-        */
-
         return $response;
     }
 
