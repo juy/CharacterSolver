@@ -1,0 +1,27 @@
+{
+    "name": "juy/CharacterSolver",
+    "description": "Solve some character issue on source code",
+    "license": "MIT",
+    "type": "library",
+    "homepage": "https://github.com/juy/CharacterSolver",
+    "authors": [
+        {
+            "name": "Sevdin Filiz",
+            "email": "sevdin.filiz@gmail.com",
+            "homepage": "http://www.juysoft.com",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/juy/CharacterSolver/issues",
+        "docs": "https://github.com/juy/CharacterSolver/blob/master/README.md"
+    },
+    "require": {
+        "illuminate/support": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Juy\\CharacterSolver\\": "src/"
+        }
+    }
+}
