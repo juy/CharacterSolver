@@ -1,5 +1,5 @@
 {
-    "name": "juy/CharacterSolver",
+    "name": "juy/character-solver",
     "description": "Solve some character issue on source code",
     "license": "MIT",
     "type": "library",
