@@ -20,14 +20,19 @@ class CharacterSolver {
      */
     public function handle($request, Closure $next)
     {
+        // Meybe need to move a config file
+        $translate = [
+            '&ccedil;'  => 'ç',
+            '&Ccedil;'  => 'Ç',
+            '&ouml;'    => 'ö',
+            '&Ouml;'    => 'Ö',
+            '&uuml;'    => 'ü',
+            '&Uuml;'    => 'Ü',
+        ];
+        
         $response = $next($request);
-
-        $response->setContent(str_replace(
-            ['&ccedil;', '&Ccedil;', '&ouml;', '&Ouml;', '&uuml;', '&Uuml;'],
-            ['ç',        'Ç',        'ö',      'Ö',      'ü',      'Ü'],
-            $response->getContent()
-        ));
-
+        $response->setContent(strtr($response->getContent(), $translate));
+        
         return $response;
     }
 
