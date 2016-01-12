@@ -32,7 +32,7 @@ Juy\CharacterSolver\CharacterSolverServiceProvider::class,
 
 ## Usage
 
-No any usage instructions, package runs automatically.
+No any usage instructions, package run automatically.
 
 
 ----------
