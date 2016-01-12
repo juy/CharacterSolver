@@ -16,27 +16,24 @@
 
 ## Installation
 
-First you'll need to install the [Composer package](https://packagist.org/packages/juy/CharacterSolver) from Packagist.
+You'll need to install the [Composer package](https://packagist.org/packages/juy/character-solver) from Packagist.
 
-Simply add the following to the `"require"` section of your `composer.json` file, and `composer update`.
+Add this package to your `composer.json` file and run `composer update` once.
 
 ```json
 "juy/character-solver": "dev-master",
 ```
 
-Next, you'll need to add the `ServiceProvider` for this command to the `providers` array within your `config/app.php` file.
+Append this line to your service providers array in `config/app.php`.
 
 ```php
-'providers' => [
-
-    /*
-     * Loads of other providers here...
-     */
-
-    Juy\CharacterSolver\CharacterSolverServiceProvider::class,
-
-],
+Juy\CharacterSolver\CharacterSolverServiceProvider::class,
 ```
+
+## Usage
+
+No any usage instructions, package runs automatically.
+
 
 ----------
 
