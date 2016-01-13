@@ -2,7 +2,7 @@
 
 All Notable changes to `Character Solver` will be documented in this file
 
-## Development
+## 1.0.2
 
 - Change a bracelet to new line
 - Installation instructions are simplified explanations
