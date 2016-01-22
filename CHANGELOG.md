@@ -1,6 +1,10 @@
-# Changelog
+# Change log
 
-All Notable changes to `Character Solver` will be documented in this file
+All notable changes to this project will be documented in this file.
+
+## 1.0.3
+
+- Test on laravel 5.2 and add laravel 5.2 badge
 
 ## 1.0.2
 
