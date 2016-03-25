@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## Development
+
+- Modify README
+
 ## 1.0.3
 
 - Test on laravel 5.2 and add laravel 5.2 badge
