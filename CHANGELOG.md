@@ -5,6 +5,7 @@ All notable changes to this project will be documented in this file.
 ## Development
 
 - Modify README
+- Change require section on composer.json
 
 ## 1.0.3
 
