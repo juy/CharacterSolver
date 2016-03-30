@@ -1,4 +1,5 @@
 # Character Solver laravel package
+
 [![Laravel](https://img.shields.io/badge/Laravel-5.1-orange.svg?style=flat-square)](http://laravel.com) [![Laravel](https://img.shields.io/badge/Laravel-5.2-orange.svg?style=flat-square)](http://laravel.com)
 
 > Character Solver is global middleware solution (convert back html encoding) for some characters.
@@ -18,22 +19,32 @@
 
 You'll need to install the [Composer package](https://packagist.org/packages/juy/character-solver) from Packagist.
 
+### Composer package
+
 Add this package to your `composer.json` file and run `composer update` once.
 
 ```json
 "juy/character-solver": "1.*",
 ```
 
-Append this line to your service providers array in `config/app.php`.
+### Service provider
+
+Append this line to your **service providers** array in `config/app.php`.
 
 ```php
-Juy\CharacterSolver\CharacterSolverServiceProvider::class,
+Juy\CharacterSolver\ServiceProvider::class,
+```
+
+### Publish config
+If you need change or add different character, you can publish a config file.
+
+```
+php artisan vendor:publish --provider="Juy\Providers\CharacterSolver" --tag="config" --force
 ```
 
 ## Usage
 
-No any usage instructions, package run automatically.
-
+No any usage instructions, package run automatically. You can enable/disable it on config file, after publish config.
 
 ----------
 

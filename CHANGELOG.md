@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## 1.0.4
+
+- Change require section on composer.json
+- Change ServiceProvider file name *(This is break previous installations)*
+- Add config file
+- Some improvements
+- Modify README 
+
 ## 1.0.3
 
 - Test on laravel 5.2 and add laravel 5.2 badge

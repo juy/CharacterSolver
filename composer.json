@@ -17,7 +17,8 @@
         "docs": "https://github.com/juy/CharacterSolver/blob/master/README.md"
     },
     "require": {
-        "illuminate/support": "*"
+        "illuminate/support": "5.1.*|5.2.*",
+        "illuminate/http": "5.1.*|5.2.*",
     },
     "autoload": {
         "psr-4": {
