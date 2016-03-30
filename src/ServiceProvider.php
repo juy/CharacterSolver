@@ -2,10 +2,10 @@
 
 namespace Juy\CharacterSolver;
 
-use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\ServiceProvider as IlluminateServiceProvider;
 use Illuminate\Contracts\Http\Kernel;
 
-class CharacterSolverServiceProvider extends ServiceProvider
+class ServiceProvider extends IlluminateServiceProvider
 {
     /**
      * Perform post-registration booting of services.

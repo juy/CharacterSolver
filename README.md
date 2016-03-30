@@ -28,7 +28,7 @@ Add this package to your `composer.json` file and run `composer update` once.
 Append this line to your **service providers** array in `config/app.php`.
 
 ```php
-Juy\CharacterSolver\CharacterSolverServiceProvider::class,
+Juy\CharacterSolver\ServiceProvider::class,
 ```
 
 ## Usage

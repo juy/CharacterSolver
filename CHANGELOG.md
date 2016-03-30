@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file.
 
 - Modify README
 - Change require section on composer.json
+- Change ServiceProvider file name
 
 ## 1.0.3
 
