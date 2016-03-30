@@ -8,6 +8,16 @@ use Illuminate\Contracts\Http\Kernel;
 class ServiceProvider extends IlluminateServiceProvider
 {
     /**
+     * Register the application services.
+     *
+     * @return void
+     */
+    public function register()
+    {
+        //
+    }
+    
+    /**
      * Perform post-registration booting of services.
      *
      * @param \Illuminate\Contracts\Http\Kernel $kernel
@@ -20,15 +30,5 @@ class ServiceProvider extends IlluminateServiceProvider
         // Add a new middleware to end of the stack if it does not already exist.
         // https://github.com/laravel/framework/blob/5.1/src/Illuminate/Foundation/Http/Kernel.php#L205
         $kernel->pushMiddleware(Middleware\CharacterSolver::class);
-    }
-
-    /**
-     * Register the application services.
-     *
-     * @return void
-     */
-    public function register()
-    {
-        //
     }
 }
