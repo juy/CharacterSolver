@@ -22,17 +22,14 @@ class CharacterSolver {
     {
         // Meybe need to move a config file
         $translate = [
-            '&ccedil;'  => 'ç',
-            '&Ccedil;'  => 'Ç',
-            '&ouml;'    => 'ö',
-            '&Ouml;'    => 'Ö',
-            '&uuml;'    => 'ü',
-            '&Uuml;'    => 'Ü',
+            '&ccedil;'  => 'ç', '&Ccedil;'  => 'Ç',
+            '&ouml;'    => 'ö', '&Ouml;'    => 'Ö',
+            '&uuml;'    => 'ü', '&Uuml;'    => 'Ü',
         ];
-        
+
         $response = $next($request);
         $response->setContent(strtr($response->getContent(), $translate));
-        
+
         return $response;
     }
 
