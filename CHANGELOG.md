@@ -8,6 +8,7 @@ All notable changes to this project will be documented in this file.
 - Change require section on composer.json
 - Change ServiceProvider file name
 - Change method sequence on ServiceProvider file
+- Add registerMiddleware method
 
 ## 1.0.3
 

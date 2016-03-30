@@ -16,19 +16,26 @@ class ServiceProvider extends IlluminateServiceProvider
     {
         //
     }
-    
+
     /**
      * Perform post-registration booting of services.
      *
-     * @param \Illuminate\Contracts\Http\Kernel $kernel
-
      * @return void
      */
-    public function boot(Kernel $kernel)
+    public function boot()
     {
-        // Global middleware
         // Add a new middleware to end of the stack if it does not already exist.
-        // https://github.com/laravel/framework/blob/5.1/src/Illuminate/Foundation/Http/Kernel.php#L205
-        $kernel->pushMiddleware(Middleware\CharacterSolver::class);
+        $this->registerMiddleware(Middleware\CharacterSolver::class);
+    }
+
+    /**
+     * Register the CharacterSolver middleware.
+     *
+     * @param  string $middleware
+     */
+    protected function registerMiddleware($middleware)
+    {
+        $kernel = $this->app['Illuminate\Contracts\Http\Kernel'];
+        $kernel->pushMiddleware($middleware);
     }
 }
