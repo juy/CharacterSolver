@@ -8,7 +8,7 @@ use Illuminate\Contracts\Http\Kernel;
 class CharacterSolverServiceProvider extends ServiceProvider
 {
     /**
-     * Bootstrap the application services.
+     * Perform post-registration booting of services.
      *
      * @param \Illuminate\Contracts\Http\Kernel $kernel
 
