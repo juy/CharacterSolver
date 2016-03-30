@@ -2,13 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
-## Development
+## 1.0.4
 
-- Modify README
 - Change require section on composer.json
-- Change ServiceProvider file name
-- Change method sequence on ServiceProvider file
-- Add registerMiddleware method
+- Change ServiceProvider file name *(This is break previous installations)*
+- Add config file
+- Some improvements
+- Modify README 
 
 ## 1.0.3
 

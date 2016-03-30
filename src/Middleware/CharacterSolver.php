@@ -3,6 +3,7 @@
 namespace Juy\CharacterSolver\Middleware;
 
 use Closure;
+use Illuminate\Foundation\Application;
 
 /**
  * CharacterSolverMiddleware
@@ -10,6 +11,16 @@ use Closure;
  * @package App\Http\Middleware
  */
 class CharacterSolver {
+
+    /**
+     * Create a new middleware instance.
+     *
+     * @param Application $app
+     */
+    public function __construct(Application $app)
+    {
+        $this->app = $app;
+    }
 
     /**
      * Handle an incoming request.
@@ -20,15 +31,8 @@ class CharacterSolver {
      */
     public function handle($request, Closure $next)
     {
-        // Meybe need to move a config file
-        $translate = [
-            '&ccedil;'  => 'ç', '&Ccedil;'  => 'Ç',
-            '&ouml;'    => 'ö', '&Ouml;'    => 'Ö',
-            '&uuml;'    => 'ü', '&Uuml;'    => 'Ü',
-        ];
-
         $response = $next($request);
-        $response->setContent(strtr($response->getContent(), $translate));
+        $response->setContent(strtr($response->getContent(), $this->app['config']->get('charactersolver.translate')));
 
         return $response;
     }

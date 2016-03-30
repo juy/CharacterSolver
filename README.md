@@ -19,11 +19,15 @@
 
 You'll need to install the [Composer package](https://packagist.org/packages/juy/character-solver) from Packagist.
 
+### Composer package
+
 Add this package to your `composer.json` file and run `composer update` once.
 
 ```json
 "juy/character-solver": "1.*",
 ```
+
+### Service provider
 
 Append this line to your **service providers** array in `config/app.php`.
 
@@ -31,9 +35,16 @@ Append this line to your **service providers** array in `config/app.php`.
 Juy\CharacterSolver\ServiceProvider::class,
 ```
 
+### Publish config
+If you need change or add different character, you can publish a config file.
+
+```
+php artisan vendor:publish --provider="Juy\Providers\CharacterSolver" --tag="config" --force
+```
+
 ## Usage
 
-No any usage instructions, package run automatically.
+No any usage instructions, package run automatically. You can enable/disable it on config file, after publish config.
 
 ----------
 
