@@ -17,8 +17,6 @@
 
 ## Installation
 
-You'll need to install the [Composer package](https://packagist.org/packages/juy/character-solver) from Packagist.
-
 ### Composer package
 
 Add this package to your `composer.json` file and run `composer update` once.
@@ -36,6 +34,7 @@ Juy\CharacterSolver\ServiceProvider::class,
 ```
 
 ### Publish config
+
 If you need change or add different character, you can publish a config file.
 
 ```
