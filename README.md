@@ -38,7 +38,7 @@ Juy\CharacterSolver\ServiceProvider::class,
 If you need change or add different character, you can publish a config file.
 
 ```
-php artisan vendor:publish --provider="Juy\Providers\CharacterSolver" --tag="config" --force
+php artisan vendor:publish --provider="Juy\Providers\ServiceProvider" --tag="config" --force
 ```
 
 ## Usage
