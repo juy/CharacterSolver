@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## 1.0.5
+
+- Fix README
+
 ## 1.0.4
 
 - Change require section on composer.json

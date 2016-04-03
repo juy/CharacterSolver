@@ -3,7 +3,6 @@
 namespace Juy\CharacterSolver;
 
 use Illuminate\Support\ServiceProvider as IlluminateServiceProvider;
-use Illuminate\Contracts\Http\Kernel;
 
 class ServiceProvider extends IlluminateServiceProvider
 {
