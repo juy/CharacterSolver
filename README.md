@@ -22,7 +22,7 @@
 Add this package to your `composer.json` file and run `composer update` once.
 
 ```json
-"juy/character-solver": "1.*",
+"juy/character-solver": "1.*"
 ```
 
 ### Service provider
