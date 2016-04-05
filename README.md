@@ -22,7 +22,7 @@
 Add this package to your `composer.json` file and run `composer update` once.
 
 ```json
-"juy/character-solver": "1.*",
+"juy/character-solver": "1.*"
 ```
 
 ### Service provider
@@ -38,14 +38,26 @@ Juy\CharacterSolver\ServiceProvider::class,
 If you need change or add different character, you can publish a config file.
 
 ```
-php artisan vendor:publish --provider="Juy\Providers\ServiceProvider" --tag="config" --force
+php artisan vendor:publish --provider="Juy\CharacterSolver\ServiceProvider" --tag="config" --force
 ```
 
 ## Usage
 
-No any usage instructions, package run automatically. You can enable/disable it on config file, after publish config.
+Package run automatically with a global middleware. You can enable/disable it on `config/charactersolver.php` config file, after publish package config.
+
+### Advanced usage
+
+If you want to use middleware at Kernel file:
+
+1. Publish package config and disable it on `config/charactersolver.php` config file (`'enabled' => false,`).
+2. Add the following code to `app/Http/Kernel.php` file, in web middleware groups.
+
+```
+\Juy\CharacterSolver\Middleware\CharacterSolver::class,
+```
 
 ----------
 
 ### License
+
 This project is open-sourced software licensed under the [MIT License](LICENSE.txt).

@@ -1,6 +1,7 @@
 {
     "name": "juy/character-solver",
     "description": "Solve some character issue on source code",
+    "keywords": ["laravel", "middleware", "character", "source code"],
     "license": "MIT",
     "type": "library",
     "homepage": "https://github.com/juy/CharacterSolver",

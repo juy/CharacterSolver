@@ -2,9 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
+## 1.0.6
+
+- Add keywords section to composer.json
+- Fix wrong ServiceProvider name on README
+- Add advanced usage section to README
+
 ## 1.0.5
 
 - Fix README
+- Modify README, remove comma from composer.json part
 
 ## 1.0.4
 

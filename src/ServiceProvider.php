@@ -61,7 +61,6 @@ class ServiceProvider extends IlluminateServiceProvider
      */
     protected function publishConfig()
     {
-        // php artisan vendor:publish --provider="Juy\Providers\CharacterSolver" --tag="config" --force
         $this->publishes([
             __DIR__.'/../config/charactersolver.php' => config_path('charactersolver.php')
         ], 'config');
