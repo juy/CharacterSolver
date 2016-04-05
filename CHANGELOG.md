@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file.
 
-## Development
+## 1.0.6
 
 - Add keywords section to composer.json
 - Fix wrong ServiceProvider name on README
