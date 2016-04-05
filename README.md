@@ -43,7 +43,18 @@ php artisan vendor:publish --provider="Juy\CharacterSolver\ServiceProvider" --ta
 
 ## Usage
 
-No any usage instructions, package run automatically. You can enable/disable it on config file, after publish config.
+Package run automatically with a global middleware. You can enable/disable it on `config/charactersolver.php` config file, after publish package config.
+
+### Advanced usage
+
+If you want to use middleware at Kernel file:
+
+1. Publish package config and disable it on `config/charactersolver.php` config file (`'enabled' => false,`).
+2. Add the following code to `app/Http/Kernel.php` file, in web middleware groups.
+
+```
+\Juy\CharacterSolver\Middleware\CharacterSolver::class,
+```
 
 ----------
 
