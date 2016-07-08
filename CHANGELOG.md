@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## Development
+
+- Modify README, change installation directives
+
 ## 1.0.6
 
 - Add keywords section to composer.json

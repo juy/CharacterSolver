@@ -19,11 +19,25 @@
 
 ### Composer package
 
-Add this package to your `composer.json` file and run `composer update` once.
+#### Install
 
-```json
-"juy/character-solver": "1.*"
 ```
+composer require juy/character-solver:1.*
+```
+
+#### Remove
+
+```
+composer remove juy/character-solver
+```
+
+> #### Manual install (Alternative)
+
+> Add this package to your `composer.json` file and run `composer update` once.
+
+> ```json
+>"juy/character-solver": "1.*"
+>```
 
 ### Service provider
 
