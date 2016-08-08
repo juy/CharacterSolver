@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## Development
+
+- Small typo fix
+
 ## 1.0.7
 
 - Modify README, change installation directives

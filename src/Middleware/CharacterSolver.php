@@ -6,7 +6,7 @@ use Closure;
 use Illuminate\Foundation\Application;
 
 /**
- * CharacterSolverMiddleware
+ * CharacterSolver Middleware
  * @link https://gist.github.com/blueskan/2d82af0204b4fc4b0f14
  * @package App\Http\Middleware
  */
