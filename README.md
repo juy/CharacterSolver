@@ -4,13 +4,15 @@
 
 > Character Solver is global middleware solution (convert back html encoding) for some characters.
 
+Default character replacement list *(Changed through the configuration file)*:
+
 ```
-&ccedil;    ç
-&Ccedil;    Ç
-&ouml;      ö
-&Ouml;      Ö
-&uuml;      ü
-&Uuml;      Ü
+&ccedil; ->  ç
+&Ccedil; ->  Ç
+&ouml;   ->  ö
+&Ouml;   ->  Ö
+&uuml;   ->  ü
+&Uuml;   ->  Ü
 ```
 
 ----------
