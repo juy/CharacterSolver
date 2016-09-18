@@ -32,7 +32,9 @@ class CharacterSolver {
     public function handle($request, Closure $next)
     {
         $response = $next($request);
-        $response->setContent(strtr($response->getContent(), $this->app['config']->get('charactersolver.translate')));
+        $response->setContent(
+            strtr($response->getContent(), $this->app['config']->get('charactersolver.translate'))
+        );
 
         return $response;
     }
