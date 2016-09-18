@@ -1,6 +1,6 @@
 # Character Solver laravel package
 
-[![Laravel](https://img.shields.io/badge/Laravel-5.1-orange.svg?style=flat-square)](http://laravel.com) [![Laravel](https://img.shields.io/badge/Laravel-5.2-orange.svg?style=flat-square)](http://laravel.com) [![Laravel](https://img.shields.io/badge/Laravel-5.3-orange.svg?style=flat-square)](http://laravel.com)
+[![Laravel](https://img.shields.io/badge/Laravel-5.3.*-orange.svg?style=flat-square)](http://laravel.com) [![Software License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](LICENSE.txt) [![Latest Version](https://img.shields.io/github/release/juy/CharacterSolver.svg?style=flat-square&label=latest version)](https://github.com/juy/CharacterSolver/tags)
 
 > Character Solver is global middleware solution (convert back html encoding) for some characters.
 
@@ -16,6 +16,10 @@ Default character replacement list *(Changed through the configuration file)*:
 ```
 
 ----------
+
+## Supported Laravel versions
+
+- Laravel **5.1** / **5.2** / **5.3** (master branch this branch)
 
 ## Installation
 
