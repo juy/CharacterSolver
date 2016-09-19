@@ -15,7 +15,7 @@ class ServiceProvider extends IlluminateServiceProvider
     {
         // Default package configuration
         $this->mergeConfigFrom(
-            __DIR__ . '/config/charactersolver.php', 'charactersolver'
+            __DIR__ . '/../config/charactersolver.php', 'charactersolver'
         );
     }
 
@@ -62,7 +62,7 @@ class ServiceProvider extends IlluminateServiceProvider
     protected function publishConfig()
     {
         $this->publishes([
-            __DIR__ . '/config/charactersolver.php' => config_path('charactersolver.php')
+            __DIR__ . '/../config/charactersolver.php' => config_path('charactersolver.php')
         ], 'config');
     }
 }
