@@ -74,7 +74,7 @@ class ServiceProvider extends IlluminateServiceProvider
     protected function mergeConfig()
     {
         $this->mergeConfigFrom(
-            __DIR__ . '/../config/charactersolver.php', 'charactersolver'
+            $this->packagePath('config/charactersolver.php'), 'charactersolver'
         );
     }
 
@@ -86,8 +86,19 @@ class ServiceProvider extends IlluminateServiceProvider
     protected function publishConfig()
     {
         $this->publishes([
-            __DIR__ . '/../config/charactersolver.php' => config_path('charactersolver.php')
+            $this->packagePath('config/charactersolver.php') => config_path('charactersolver.php')
         ], 'config');
+    }
+    
+    /**
+     * Loads a path relative to the package base directory
+     *
+     * @param string $path
+     * @return string
+     */
+    protected function packagePath($path = '')
+    {
+        return sprintf('%s/../%s', __DIR__, $path);
     }
 
 }
