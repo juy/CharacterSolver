@@ -23,29 +23,29 @@ Default character replacement list *(Changed through the configuration file)*:
 
 ## Installation
 
-### Composer package
+### Step:1 Install Through Composer
 
 #### Install
 
 ```
-composer require juy/character-solver:1.*
+➜ composer require juy/character-solver:1.*
 ```
 
 #### Remove
 
 ```
-composer remove juy/character-solver
+➜ composer remove juy/character-solver
 ```
 
 > #### Manual install (Alternative)
 
-> Add this package to your `composer.json` file and run `composer update` once.
+> Simply add the following to the "require" section of your composer.json file, and run `composer update` command.
 
 > ```json
 >"juy/character-solver": "1.*"
 >```
 
-### Service provider
+### Step 2: Add the Service Provider
 
 Append this line to your **service providers** array in `config/app.php`.
 
@@ -53,12 +53,33 @@ Append this line to your **service providers** array in `config/app.php`.
 Juy\CharacterSolver\ServiceProvider::class,
 ```
 
-### Publish config
+### Step 3: Publish Config
 
 If you need change or add different character, you can publish a config file.
 
 ```
-php artisan vendor:publish --provider="Juy\CharacterSolver\ServiceProvider" --tag="config" --force
+➜ php artisan vendor:publish --provider="Juy\CharacterSolver\ServiceProvider" --tag="config" --force
+```
+
+### Config Overview
+
+You can modify config as you wish.
+
+```
+return [
+
+    'enabled' => true,
+
+    // Default character replacement
+    'translate' => [
+        '&ccedil;' => 'ç',
+        '&Ccedil;' => 'Ç',
+        '&ouml;'   => 'ö',
+        '&Ouml;'   => 'Ö',
+        '&uuml;'   => 'ü',
+        '&Uuml;'   => 'Ü',
+    ]
+];
 ```
 
 ## Usage
