@@ -2,14 +2,14 @@
 
 namespace Juy\CharacterSolver;
 
-use Illuminate\Support\ServiceProvider as IlluminateServiceProvider;
+use Illuminate\Support\ServiceProvider as BaseServiceProvider;
 
 /**
  * Class ServiceProvider
  * 
  * @package Juy\CharacterSolver
  */
-class ServiceProvider extends IlluminateServiceProvider
+class ServiceProvider extends BaseServiceProvider
 {
     /**
      * Indicates if loading of the provider is deferred
