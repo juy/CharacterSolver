@@ -20,10 +20,7 @@ class ServiceProvider extends IlluminateServiceProvider
      */
     public function register()
     {
-        // Default package configuration
-        $this->mergeConfigFrom(
-            __DIR__ . '/../config/charactersolver.php', 'charactersolver'
-        );
+        //
     }
 
     /**
@@ -33,8 +30,8 @@ class ServiceProvider extends IlluminateServiceProvider
      */
     public function boot()
     {
-        // Publish the config file
-        $this->publishConfig();
+        // Register configurations
+        $this->registerConfigurations();
 
         // If running in console
         if ($this->app->runningInConsole())
@@ -64,12 +61,21 @@ class ServiceProvider extends IlluminateServiceProvider
     }
 
     /**
-     * Publish the config file
+     * Register configurations
+     *
+     * @return void
      */
-    protected function publishConfig()
+    protected function registerConfigurations()
     {
+        // Default package configuration
+        $this->mergeConfigFrom(
+            __DIR__ . '/../config/charactersolver.php', 'charactersolver'
+        );
+
+        // Publish the config file
         $this->publishes([
             __DIR__ . '/../config/charactersolver.php' => config_path('charactersolver.php')
         ], 'config');
     }
+
 }
