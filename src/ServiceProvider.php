@@ -12,6 +12,13 @@ use Illuminate\Support\ServiceProvider as BaseServiceProvider;
 class ServiceProvider extends BaseServiceProvider
 {
     /**
+     * Package name
+     *
+     * @const string
+     */
+    const PACKAGE_NAME = 'charactersolver';
+
+    /**
      * Indicates if loading of the provider is deferred
      *
      * @var bool
@@ -74,7 +81,7 @@ class ServiceProvider extends BaseServiceProvider
     protected function mergeConfig()
     {
         $this->mergeConfigFrom(
-            $this->packagePath('config/config.php'), 'charactersolver'
+            $this->packagePath('config/config.php'), self::PACKAGE_NAME
         );
     }
 
@@ -86,7 +93,7 @@ class ServiceProvider extends BaseServiceProvider
     protected function publishConfig()
     {
         $this->publishes([
-            $this->packagePath('config/config.php') => config_path('charactersolver.php')
+            $this->packagePath('config/config.php') => config_path(self::PACKAGE_NAME . '.php')
         ], 'config');
     }
     
