@@ -4,6 +4,11 @@ namespace Juy\CharacterSolver;
 
 use Illuminate\Support\ServiceProvider as IlluminateServiceProvider;
 
+/**
+ * Class ServiceProvider
+ * 
+ * @package Juy\CharacterSolver
+ */
 class ServiceProvider extends IlluminateServiceProvider
 {
     /**
@@ -68,7 +73,6 @@ class ServiceProvider extends IlluminateServiceProvider
      */
     protected function mergeConfig()
     {
-        // Default package configuration
         $this->mergeConfigFrom(
             __DIR__ . '/../config/charactersolver.php', 'charactersolver'
         );

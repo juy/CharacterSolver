@@ -7,8 +7,9 @@ use Illuminate\Foundation\Application;
 
 /**
  * CharacterSolver Middleware
+ *
  * @link https://gist.github.com/blueskan/2d82af0204b4fc4b0f14
- * @package App\Http\Middleware
+ * @package Juy\CharacterSolver
  */
 class CharacterSolver {
 
