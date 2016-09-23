@@ -13,7 +13,7 @@ use Illuminate\Foundation\Application;
 class CharacterSolver {
 
     /**
-     * Create a new middleware instance.
+     * Create a new middleware instance
      *
      * @param Application $app
      */
@@ -23,7 +23,7 @@ class CharacterSolver {
     }
 
     /**
-     * Handle an incoming request.
+     * Handle an incoming request
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  \Closure  $next

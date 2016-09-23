@@ -7,7 +7,7 @@ use Illuminate\Support\ServiceProvider as IlluminateServiceProvider;
 class ServiceProvider extends IlluminateServiceProvider
 {
     /**
-     * Register the application services.
+     * Register the application services
      *
      * @return void
      */
@@ -20,7 +20,7 @@ class ServiceProvider extends IlluminateServiceProvider
     }
 
     /**
-     * Perform post-registration booting of services.
+     * Perform post-registration booting of services
      *
      * @return void
      */
@@ -41,12 +41,12 @@ class ServiceProvider extends IlluminateServiceProvider
             return;
         }
 
-        // Add a new middleware to end of the stack if it does not already exist.
+        // Add a new middleware to end of the stack if it does not already exist
         $this->registerMiddleware(Middleware\CharacterSolver::class);
     }
 
     /**
-     * Register the CharacterSolver middleware.
+     * Register the CharacterSolver middleware
      *
      * @param  string $middleware
      */
@@ -57,7 +57,7 @@ class ServiceProvider extends IlluminateServiceProvider
     }
 
     /**
-     * Publish the config file.
+     * Publish the config file
      */
     protected function publishConfig()
     {
