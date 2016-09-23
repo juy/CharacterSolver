@@ -1,6 +1,6 @@
 # Character Solver laravel package
 
-[![Laravel](https://img.shields.io/badge/Laravel-5.1-orange.svg?style=flat-square)](http://laravel.com) [![Laravel](https://img.shields.io/badge/Laravel-5.2-orange.svg?style=flat-square)](http://laravel.com) [![Laravel](https://img.shields.io/badge/Laravel-5.3-orange.svg?style=flat-square)](http://laravel.com)
+[![Laravel](https://img.shields.io/badge/Laravel-5.3.*-orange.svg?style=flat-square)](http://laravel.com) [![Software License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](LICENSE.txt) [![Latest Version](https://img.shields.io/github/release/juy/CharacterSolver.svg?style=flat-square&label=latest version)](https://github.com/juy/CharacterSolver/tags)
 
 > Character Solver is global middleware solution (convert back html encoding) for some characters.
 
@@ -17,31 +17,35 @@ Default character replacement list *(Changed through the configuration file)*:
 
 ----------
 
+## Supported Laravel versions
+
+- Laravel **5.1** / **5.2** / **5.3** (master branch)
+
 ## Installation
 
-### Composer package
+### Step:1 Install Through Composer
 
 #### Install
 
 ```
-composer require juy/character-solver:1.*
+➜ composer require juy/character-solver:1.*
 ```
 
 #### Remove
 
 ```
-composer remove juy/character-solver
+➜ composer remove juy/character-solver
 ```
 
 > #### Manual install (Alternative)
 
-> Add this package to your `composer.json` file and run `composer update` once.
+> Simply add the following to the "require" section of your composer.json file, and run `composer update` command.
 
 > ```json
 >"juy/character-solver": "1.*"
 >```
 
-### Service provider
+### Step 2: Add the Service Provider
 
 Append this line to your **service providers** array in `config/app.php`.
 
@@ -49,12 +53,33 @@ Append this line to your **service providers** array in `config/app.php`.
 Juy\CharacterSolver\ServiceProvider::class,
 ```
 
-### Publish config
+### Step 3: Publish Config
 
 If you need change or add different character, you can publish a config file.
 
 ```
-php artisan vendor:publish --provider="Juy\CharacterSolver\ServiceProvider" --tag="config" --force
+➜ php artisan vendor:publish --provider="Juy\CharacterSolver\ServiceProvider" --tag="config" --force
+```
+
+### Config Overview
+
+You can modify config as you wish.
+
+```
+return [
+
+    'enabled' => true,
+
+    // Default character replacement
+    'translate' => [
+        '&ccedil;' => 'ç',
+        '&Ccedil;' => 'Ç',
+        '&ouml;'   => 'ö',
+        '&Ouml;'   => 'Ö',
+        '&uuml;'   => 'ü',
+        '&Uuml;'   => 'Ü',
+    ]
+];
 ```
 
 ## Usage
