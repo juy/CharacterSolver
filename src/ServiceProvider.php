@@ -74,7 +74,7 @@ class ServiceProvider extends IlluminateServiceProvider
     protected function mergeConfig()
     {
         $this->mergeConfigFrom(
-            $this->packagePath('config/charactersolver.php'), 'charactersolver'
+            $this->packagePath('config/config.php'), 'charactersolver'
         );
     }
 
@@ -86,7 +86,7 @@ class ServiceProvider extends IlluminateServiceProvider
     protected function publishConfig()
     {
         $this->publishes([
-            $this->packagePath('config/charactersolver.php') => config_path('charactersolver.php')
+            $this->packagePath('config/config.php') => config_path('charactersolver.php')
         ], 'config');
     }
     
