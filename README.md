@@ -17,9 +17,9 @@ Default character replacement list *(Changed through the configuration file)*:
 
 ----------
 
-## Supported Laravel versions
+### Supported Laravel Versions
 
-- Laravel **5.1** / **5.2** / **5.3**
+- Laravel **5.1** | **5.2** | **5.3**
 
 ## Installation
 
