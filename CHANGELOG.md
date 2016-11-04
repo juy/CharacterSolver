@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file. This project is versioned under the [Semantic Versioning](http://semver.org/) guidelines.
 
+## Development
+
+- Add new html_entity_decode() function for alterntive strtr() function.
+
 ## v1.0.9
 
 - Move config folder outside src directory
