@@ -31,11 +31,6 @@ Default character replacement list *(Changed through the configuration file)*:
 ➜ composer require juy/character-solver:1.*
 ```
 
-#### Remove
-
-```
-➜ composer remove juy/character-solver
-```
 
 > #### Manual install (Alternative)
 
@@ -44,6 +39,12 @@ Default character replacement list *(Changed through the configuration file)*:
 > ```json
 >"juy/character-solver": "1.*"
 >```
+
+#### Remove
+
+```
+➜ composer remove juy/character-solver
+```
 
 ### Step 2: Add the Service Provider
 
