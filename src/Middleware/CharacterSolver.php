@@ -11,8 +11,8 @@ use Illuminate\Foundation\Application;
  * @link https://gist.github.com/blueskan/2d82af0204b4fc4b0f14
  * @package Juy\CharacterSolver
  */
-class CharacterSolver {
-
+class CharacterSolver
+{
     /**
      * Create a new middleware instance
      *
