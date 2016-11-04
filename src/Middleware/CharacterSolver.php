@@ -33,11 +33,21 @@ class CharacterSolver
     public function handle($request, Closure $next)
     {
         $response = $next($request);
-        $response->setContent(
-            strtr($response->getContent(), $this->app['config']->get('charactersolver.translate'))
-        );
+        
+        if ($this->app['config']->get('charactersolver.default') === 'strtr')
+        {
+            $response->setContent(
+                strtr($response->getContent(), $this->app['config']->get('charactersolver.translate'))
+            );
+        }
+        else
+        {
+            $response->setContent(
+                html_entity_decode($response->getContent(), ENT_COMPAT, 'UTF-8')
+            );
+        }
 
         return $response;
     }
-
+    
 }
