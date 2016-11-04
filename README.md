@@ -2,7 +2,7 @@
 
 [![Laravel](https://img.shields.io/badge/Laravel-5.3.*-orange.svg?style=flat-square)](http://laravel.com) [![Software License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](LICENSE.txt) [![Latest Version](https://img.shields.io/github/release/juy/CharacterSolver.svg?style=flat-square&label=latest version)](https://github.com/juy/CharacterSolver/tags)
 
-> Character Solver is global middleware solution (convert back html encoding) for some characters.
+> Character Solver is global middleware solution (convert back HTML Entity encoding) for some characters.
 
 Default character replacement list *(Changed through the configuration file)*:
 
