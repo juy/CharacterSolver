@@ -5,6 +5,7 @@ All notable changes to this project will be documented in this file. This projec
 ## Development
 
 - Add new html_entity_decode() function for alterntive strtr() function.
+- Add .gitattributes, .editorconfig files
 
 ## v1.0.9
 
