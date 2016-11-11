@@ -14,6 +14,13 @@ use Illuminate\Foundation\Application;
 class CharacterSolver
 {
     /**
+     * Application
+     *
+     * @var Application
+     */
+    protected $app;
+    
+    /**
      * Create a new middleware instance
      *
      * @param Application $app
