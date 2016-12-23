@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. This project is versioned under the [Semantic Versioning](http://semver.org/) guidelines.
 
+## v1.0.10
+
+- Add new html_entity_decode() function for alternative strtr() function
+- Add .gitattributes, .editorconfig files
+- Small improvements
+
 ## v1.0.9
 
 - Move config folder outside src directory

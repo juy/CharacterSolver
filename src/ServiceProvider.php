@@ -1,4 +1,13 @@
 <?php
+/**
+ * This file is part of the <CharacterSolver> laravel package.
+ *
+ * @author Juy Software <package@juysoft.com>
+ * @copyright (c) 2016 Juy Software <package@juysoft.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
 
 namespace Juy\CharacterSolver;
 
@@ -14,9 +23,9 @@ class ServiceProvider extends BaseServiceProvider
     /**
      * Package name
      *
-     * @const string
+     * @var string
      */
-    const PACKAGE_NAME = 'charactersolver';
+    protected $package = 'charactersolver';
 
     /**
      * Indicates if loading of the provider is deferred
@@ -81,7 +90,7 @@ class ServiceProvider extends BaseServiceProvider
     protected function mergeConfig()
     {
         $this->mergeConfigFrom(
-            $this->packagePath('config/config.php'), self::PACKAGE_NAME
+            $this->packagePath('config/config.php'), $this->package
         );
     }
 
@@ -93,7 +102,7 @@ class ServiceProvider extends BaseServiceProvider
     protected function publishConfig()
     {
         $this->publishes([
-            $this->packagePath('config/config.php') => config_path(self::PACKAGE_NAME . '.php')
+            $this->packagePath('config/config.php') => config_path($this->package . '.php')
         ], 'config');
     }
     

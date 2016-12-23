@@ -1,8 +1,8 @@
-# Character Solver laravel package
+# Character Solver Laravel Package
 
-[![Laravel](https://img.shields.io/badge/Laravel-5.3.*-orange.svg?style=flat-square)](http://laravel.com) [![Software License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](LICENSE.txt) [![Latest Version](https://img.shields.io/github/release/juy/CharacterSolver.svg?style=flat-square&label=latest version)](https://github.com/juy/CharacterSolver/tags)
+[![Latest version](https://img.shields.io/github/release/juy/CharacterSolver.svg?style=flat-square&label=Latest version)](https://github.com/juy/CharacterSolver/tags) [![Software license](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](LICENSE.txt)
 
-> Character Solver is global middleware solution (convert back html encoding) for some characters.
+> Character Solver is global middleware solution (convert back HTML Entity encoding) for some characters.
 
 Default character replacement list *(Changed through the configuration file)*:
 
@@ -17,13 +17,18 @@ Default character replacement list *(Changed through the configuration file)*:
 
 ----------
 
-## Supported Laravel versions
+### Supported Laravel versions
 
-- Laravel **5.1** / **5.2** / **5.3** (master branch)
+- Laravel **5.1** | **5.2** | **5.3**
+
+### Requirements
+
+- Laravel >= 5.1 : Laravel 5.1 or above.
+- PHP >= 5.5.9 : PHP 5.5.9 or above on your machine.
 
 ## Installation
 
-### Step:1 Install Through Composer
+### Step:1 Install through composer
 
 #### Install
 
@@ -31,13 +36,8 @@ Default character replacement list *(Changed through the configuration file)*:
 ➜ composer require juy/character-solver:1.*
 ```
 
-#### Remove
 
-```
-➜ composer remove juy/character-solver
-```
-
-> #### Manual install (Alternative)
+> #### Manual install (alternative)
 
 > Simply add the following to the "require" section of your composer.json file, and run `composer update` command.
 
@@ -45,7 +45,13 @@ Default character replacement list *(Changed through the configuration file)*:
 >"juy/character-solver": "1.*"
 >```
 
-### Step 2: Add the Service Provider
+#### Remove
+
+```
+➜ composer remove juy/character-solver
+```
+
+### Step 2: Add the service provider
 
 Append this line to your **service providers** array in `config/app.php`.
 
@@ -53,7 +59,7 @@ Append this line to your **service providers** array in `config/app.php`.
 Juy\CharacterSolver\ServiceProvider::class,
 ```
 
-### Step 3: Publish Config
+### Step 3: Publish config
 
 If you need change or add different character, you can publish a config file.
 
@@ -61,7 +67,7 @@ If you need change or add different character, you can publish a config file.
 ➜ php artisan vendor:publish --provider="Juy\CharacterSolver\ServiceProvider" --tag="config" --force
 ```
 
-### Config Overview
+### Config overview
 
 You can modify config as you wish.
 

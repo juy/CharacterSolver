@@ -1,4 +1,13 @@
 <?php
+/**
+ * This file is part of the <CharacterSolver> laravel package.
+ *
+ * @author Juy Software <package@juysoft.com>
+ * @copyright (c) 2016 Juy Software <package@juysoft.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
 
 namespace Juy\CharacterSolver\Middleware;
 
@@ -11,8 +20,15 @@ use Illuminate\Foundation\Application;
  * @link https://gist.github.com/blueskan/2d82af0204b4fc4b0f14
  * @package Juy\CharacterSolver
  */
-class CharacterSolver {
-
+class CharacterSolver
+{
+    /**
+     * Application
+     *
+     * @var Application
+     */
+    protected $app;
+    
     /**
      * Create a new middleware instance
      *
@@ -33,11 +49,21 @@ class CharacterSolver {
     public function handle($request, Closure $next)
     {
         $response = $next($request);
-        $response->setContent(
-            strtr($response->getContent(), $this->app['config']->get('charactersolver.translate'))
-        );
+        
+        if ($this->app['config']->get('charactersolver.default') === 'strtr')
+        {
+            $response->setContent(
+                strtr($response->getContent(), $this->app['config']->get('charactersolver.translate'))
+            );
+        }
+        else
+        {
+            $response->setContent(
+                html_entity_decode($response->getContent(), ENT_COMPAT, 'UTF-8')
+            );
+        }
 
         return $response;
     }
-
+    
 }
