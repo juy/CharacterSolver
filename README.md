@@ -1,10 +1,10 @@
 # Character Solver Laravel Package
 
-[![Latest version](https://img.shields.io/github/release/juy/CharacterSolver.svg?style=flat-square&label=Latest version)](https://github.com/juy/CharacterSolver/tags) [![Software license](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](LICENSE.txt)
+[![Latest Version on Packagist][ico-version]][link-packagist] [![Software License][ico-license]](LICENSE.txt)
 
 > Character Solver is global middleware solution (convert back HTML Entity encoding) for some characters.
 
-Default character replacement list *(Changed through the configuration file)*:
+Default character replacement list *(Can be changed through the configuration file)*:
 
 ```
 &ccedil; ->  ç
@@ -17,7 +17,7 @@ Default character replacement list *(Changed through the configuration file)*:
 
 ----------
 
-### Supported Laravel versions
+### Supported/Tested Laravel versions
 
 - Laravel **5.1** | **5.2** | **5.3**
 
@@ -33,7 +33,7 @@ Default character replacement list *(Changed through the configuration file)*:
 #### Install
 
 ```
-➜ composer require juy/character-solver:1.*
+➜ composer require juy/character-solver
 ```
 
 
@@ -42,7 +42,7 @@ Default character replacement list *(Changed through the configuration file)*:
 > Simply add the following to the "require" section of your composer.json file, and run `composer update` command.
 
 > ```json
->"juy/character-solver": "1.*"
+>"juy/character-solver": "^1.0"
 >```
 
 #### Remove
@@ -108,3 +108,9 @@ If you want to use middleware at Kernel file:
 ### License
 
 This project is open-sourced software licensed under the [MIT License](LICENSE.txt).
+
+
+[ico-version]: https://img.shields.io/packagist/v/juy/character-solver.svg?style=flat-square
+[link-packagist]: https://packagist.org/packages/juy/character-solver
+
+[ico-license]: https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square
