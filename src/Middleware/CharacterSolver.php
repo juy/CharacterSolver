@@ -50,7 +50,7 @@ class CharacterSolver
     {
         $response = $next($request);
         
-        if ($this->app['config']->get('charactersolver.default') === 'strtr')
+        if ('strtr' === $this->app['config']->get('charactersolver.default'))
         {
             $response->setContent(
                 strtr($response->getContent(), $this->app['config']->get('charactersolver.translate'))
