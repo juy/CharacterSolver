@@ -20,7 +20,7 @@ All notable changes to this project will be documented in this file. This projec
 
 ## v1.0.7
 
-- Modify *README*, change installation directives
+- Update *README*, change installation directives
 - Add laravel 5.3 support to *composer.json*
 
 ## v1.0.6
@@ -31,7 +31,7 @@ All notable changes to this project will be documented in this file. This projec
 
 ## v1.0.5
 
-- Modify *README*, remove the comma from *composer.json* part
+- Update *README*, remove the comma from *composer.json* part
 
 ## v1.0.4
 
@@ -39,7 +39,7 @@ All notable changes to this project will be documented in this file. This projec
 - Change ServiceProvider file name ***(Breaking change)***
 - Add config file
 - Some improvements
-- Modify *README* 
+- Update *README* 
 
 ## v1.0.3
 
@@ -49,7 +49,7 @@ All notable changes to this project will be documented in this file. This projec
 
 - Change a bracelet to a new line
 - Installation instructions are simplified explanations
-- Add usage section to the <u>README</u> file
+- Add usage section to the *README* file
 
 ## v1.0.1
 
