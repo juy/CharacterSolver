@@ -90,7 +90,7 @@ return [
 
 ## Usage
 
-Package run automatically with a global middleware. You can enable/disable it on `config/charactersolver.php` config file, after publish package config.
+Package run automatically with a global middleware. You can enable/disable it on `config/charactersolver.php` config file, after publishing package config.
 
 ### Advanced usage
 
